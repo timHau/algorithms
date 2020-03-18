@@ -1,15 +1,13 @@
-//
-//  main.cpp
-//  algorithms
-//
-//  Created by tim on 18.03.20.
-//  Copyright © 2020 tim. All rights reserved.
-//
-
 #include <iostream>
+#include <vector>
+#include "BinHeap.hpp"
+
+using namespace std;
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    vector<int> vect{ 10, 20, 30 }; 
+    BinHeap h(1);
+    h.insert();
+    
     return 0;
 }
