@@ -8,8 +8,8 @@ bool c(int a, int b) {
 
 int main(int argc, const char * argv[]) {
     std::vector<int> nums = utils::random_numbers(0, 100, 20);
-    selection::sort(nums);
-    std::for_each(nums.begin(), nums.end(), [](int v) { std::cout << v << " ";});
+    std::vector<int> res = heapSort::sort<int>(nums);
+    std::for_each(res.begin(), res.end(), [](int v) { std::cout << v << " ";});
     
     return 0;
 }

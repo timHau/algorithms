@@ -17,10 +17,12 @@ public:
     BinHeap() {
         std::vector<T> d;
         data = d;
-        compare = [](int a, int b) -> bool { return a >= b; };
+        // defaults to min Heap meaning smallest element is root
+        // pass a compare function to the constructor if you want to change it
+        compare = [](int a, int b) -> bool { return a <= b; };
     }
     
-    BinHeap(std::function<bool(T, T)> f) {
+    BinHeap(std::function<bool(T, T)> &f) {
         std::vector<T> d;
         data = d;
         compare = f;
@@ -31,8 +33,7 @@ public:
         sift_up((int) data.size() - 1);
     }
     
-    void from_vec(std::vector<T> elems) {
-        // create a heap from a std::vector in O(n)
+    void from_vec(std::vector<T> &elems) {
         for (T e : elems)
             insert(e);
     }
@@ -67,6 +68,10 @@ public:
         }
     }
     
+    long size() {
+        return data.size();
+    }
+    
     void print() {
         std::for_each(data.begin(), data.end(), [](T d) { std::cout << d << " "; });
         std::cout << "" << std::endl;
@@ -77,5 +82,6 @@ private:
     std::vector<T> data;
     std::function<bool(T, T)> compare;
 };
+
 
 #endif /* BinHeap_hpp */
