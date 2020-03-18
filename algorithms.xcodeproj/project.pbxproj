@@ -11,6 +11,7 @@
 		2257EC7324225A7900625011 /* bubbleSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2257EC7124225A7900625011 /* bubbleSort.cpp */; };
 		2257EC79242268E200625011 /* utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2257EC78242268E200625011 /* utils.cpp */; };
 		2257EC7F24226D8200625011 /* insertionSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2257EC7D24226D8200625011 /* insertionSort.cpp */; };
+		2257EC832422711400625011 /* selectionSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2257EC812422711400625011 /* selectionSort.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -36,6 +37,8 @@
 		2257EC7A242269A800625011 /* main.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = main.hpp; sourceTree = "<group>"; };
 		2257EC7D24226D8200625011 /* insertionSort.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = insertionSort.cpp; sourceTree = "<group>"; };
 		2257EC7E24226D8200625011 /* insertionSort.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = insertionSort.hpp; sourceTree = "<group>"; };
+		2257EC812422711400625011 /* selectionSort.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = selectionSort.cpp; sourceTree = "<group>"; };
+		2257EC822422711400625011 /* selectionSort.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = selectionSort.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,7 @@
 		2257EC70242259AB00625011 /* sorting */ = {
 			isa = PBXGroup;
 			children = (
+				2257EC80242270FC00625011 /* selectionSort */,
 				2257EC7C24226D4700625011 /* insertionSort */,
 				2257EC7B24226C5200625011 /* bubbleSort */,
 			);
@@ -127,6 +131,15 @@
 				2257EC7E24226D8200625011 /* insertionSort.hpp */,
 			);
 			path = insertionSort;
+			sourceTree = "<group>";
+		};
+		2257EC80242270FC00625011 /* selectionSort */ = {
+			isa = PBXGroup;
+			children = (
+				2257EC812422711400625011 /* selectionSort.cpp */,
+				2257EC822422711400625011 /* selectionSort.hpp */,
+			);
+			path = selectionSort;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,6 +202,7 @@
 				2257EC7F24226D8200625011 /* insertionSort.cpp in Sources */,
 				2257EC5C2422232B00625011 /* main.cpp in Sources */,
 				2257EC7324225A7900625011 /* bubbleSort.cpp in Sources */,
+				2257EC832422711400625011 /* selectionSort.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
