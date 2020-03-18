@@ -13,6 +13,7 @@ to learn c++ / algorithms with this project.
 ### sorting
 - Bubblesort
 - Insertionsort
+- Selectionsort
 
 __Note__: this repo was created soley for learning / implementing what i
 learned. Send pull requests if you find things that can be improved
