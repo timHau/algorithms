@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2257EC5C2422232B00625011 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2257EC5B2422232B00625011 /* main.cpp */; };
-		2257EC65242223FF00625011 /* BinHeap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2257EC63242223FF00625011 /* BinHeap.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,8 +25,8 @@
 /* Begin PBXFileReference section */
 		2257EC582422232B00625011 /* algorithms */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = algorithms; sourceTree = BUILT_PRODUCTS_DIR; };
 		2257EC5B2422232B00625011 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		2257EC63242223FF00625011 /* BinHeap.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BinHeap.cpp; sourceTree = "<group>"; };
-		2257EC64242223FF00625011 /* BinHeap.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BinHeap.hpp; sourceTree = "<group>"; };
+		2257EC6824222B5000625011 /* BinHeap.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BinHeap.hpp; sourceTree = "<group>"; };
+		2257EC6E242232F700625011 /* utils.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = utils.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,11 +59,35 @@
 		2257EC5A2422232B00625011 /* algorithms */ = {
 			isa = PBXGroup;
 			children = (
+				2257EC6C2422313A00625011 /* shared */,
+				2257EC6A242230EC00625011 /* structures */,
 				2257EC5B2422232B00625011 /* main.cpp */,
-				2257EC63242223FF00625011 /* BinHeap.cpp */,
-				2257EC64242223FF00625011 /* BinHeap.hpp */,
 			);
 			path = algorithms;
+			sourceTree = "<group>";
+		};
+		2257EC6A242230EC00625011 /* structures */ = {
+			isa = PBXGroup;
+			children = (
+				2257EC6B242230F300625011 /* BinHeap */,
+			);
+			path = structures;
+			sourceTree = "<group>";
+		};
+		2257EC6B242230F300625011 /* BinHeap */ = {
+			isa = PBXGroup;
+			children = (
+				2257EC6824222B5000625011 /* BinHeap.hpp */,
+			);
+			path = BinHeap;
+			sourceTree = "<group>";
+		};
+		2257EC6C2422313A00625011 /* shared */ = {
+			isa = PBXGroup;
+			children = (
+				2257EC6E242232F700625011 /* utils.hpp */,
+			);
+			path = shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,7 +147,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2257EC5C2422232B00625011 /* main.cpp in Sources */,
-				2257EC65242223FF00625011 /* BinHeap.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
