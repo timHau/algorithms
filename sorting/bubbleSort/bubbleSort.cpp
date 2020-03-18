@@ -3,7 +3,7 @@
 
 namespace bubble {
     
-    template < typename T>
+    template <typename T>
     void sort(std::vector<T> &nums)
     {
         int active = 1;
