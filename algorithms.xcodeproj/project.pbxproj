@@ -49,6 +49,7 @@
 		2257EC4F2422232A00625011 = {
 			isa = PBXGroup;
 			children = (
+				2257EC6C2422313A00625011 /* shared */,
 				2257EC7A242269A800625011 /* main.hpp */,
 				2257EC5B2422232B00625011 /* main.cpp */,
 				2257EC6A242230EC00625011 /* structures */,
@@ -101,7 +102,6 @@
 		2257EC70242259AB00625011 /* sorting */ = {
 			isa = PBXGroup;
 			children = (
-				2257EC6C2422313A00625011 /* shared */,
 				2257EC7124225A7900625011 /* bubbleSort.cpp */,
 				2257EC7224225A7900625011 /* bubbleSort.hpp */,
 			);
