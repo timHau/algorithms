@@ -11,6 +11,7 @@
 #include "selectionSort.hpp"
 #include "heapSort.hpp"
 #include "mergeSort.hpp"
+#include "quickSort.hpp"
 
 
 #endif /* main_h */
