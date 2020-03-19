@@ -4,6 +4,7 @@
 // data structures
 #include "BinHeap.hpp"
 #include "SimpleList.hpp"
+#include "Stack.hpp"
 
 // sorting algorithms
 #include "bubbleSort.hpp"
