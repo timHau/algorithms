@@ -3,13 +3,25 @@
 #include "main.hpp"
 
 int main(int argc, const char * argv[]) {
-    Stack<int> s;
-    s.push(2);
-    s.push(5);
-    s.push(9);
-    s.print();
-    s.pop();
-    s.print();
+    std::vector<int> nums = utils::random_numbers(0, 100, 20);
+    for(int v : nums)
+        std::cout << v << " ";
+    std::cout << "" << std::endl;
     
+    distCount::sort(nums);
+    
+    for(int v : nums)
+        std::cout << v << " ";
+    std::cout << "" << std::endl;
+    
+   
+    
+    //    std::vector<int> res = radix::sort(nums);
+    //    for(int v : res)
+    //        std::cout << v << " ";
+    //    std::cout << "" << std::endl;
+    //
+    //    std::cout << radix::decToBase(1025, 15) << std::endl;
+    //
     return 0;
 }

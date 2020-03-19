@@ -19,6 +19,10 @@ public:
         data.print();
     }
     
+    T peek() {
+        return data.peek();
+    }
+    
     
 private:
     SimpleList<T> data;

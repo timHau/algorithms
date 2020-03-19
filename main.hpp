@@ -13,6 +13,8 @@
 #include "heapSort.hpp"
 #include "mergeSort.hpp"
 #include "quickSort.hpp"
+#include "distributionCounting.hpp"
+#include "radixSort.hpp"
 
 
 #endif /* main_h */

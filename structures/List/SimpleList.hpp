@@ -49,6 +49,10 @@ public:
         return result;
     }
     
+    T peek() {
+        return head->label;
+    }
+    
     Node *get_head() {
         return head;
     }

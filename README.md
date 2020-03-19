@@ -19,6 +19,7 @@ to learn c++ / algorithms with this project.
 - Heapsort
 - Mergesort
 - Quicksort
+- Distribution counting
 
 ### selection
 - Quickselect
