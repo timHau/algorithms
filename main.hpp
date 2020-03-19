@@ -10,6 +10,7 @@
 #include "insertionSort.hpp"
 #include "selectionSort.hpp"
 #include "heapSort.hpp"
+#include "mergeSort.hpp"
 
 
 #endif /* main_h */
