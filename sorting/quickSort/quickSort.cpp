@@ -37,4 +37,36 @@ namespace quick {
         return s1;
     }
     
+    template <typename T>
+    T select(std::vector<T> &nums, int k) {
+        if (k > nums.size()) return NULL;
+        int maxElement = (int)*std::max_element(nums.begin(), nums.end());
+        int pivotIndex = utils::random_int(0, maxElement);
+        T pivot = nums[pivotIndex];
+        
+        std::vector<T> smaller;
+        for (T elem : nums) {
+            if (elem < pivot) {
+                smaller.push_back(elem);
+            }
+        }
+        if (smaller.size() >= k) return select(smaller, k);
+        
+        std::vector<T> equals;
+        for (T elem : nums) {
+            if (elem == pivot) {
+                equals.push_back(elem);
+            }
+        }
+        if (smaller.size() + equals.size() >= k) return pivot;
+        
+        std::vector<T> larger;
+        for (T elem : nums) {
+            if (elem > pivot) {
+                larger.push_back(elem);
+            }
+        }
+        return select(larger, k - (int)smaller.size() - (int)equals.size());
+    }
+    
 }

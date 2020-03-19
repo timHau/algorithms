@@ -6,6 +6,9 @@
 namespace quick {
     template <typename T>
     std::vector<T> sort(std::vector<T> &nums);
+    
+    template <typename T>
+    T select(std::vector<T> &nums, int k);
 }
 
 #include "quickSort.cpp"
