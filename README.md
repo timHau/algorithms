@@ -9,6 +9,7 @@ to learn c++ / algorithms with this project.
 
 ### structures
 - binary Heap
+- simply linked List
 
 ### sorting
 - Bubblesort

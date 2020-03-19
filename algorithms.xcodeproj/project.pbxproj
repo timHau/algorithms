@@ -43,6 +43,7 @@
 		2257EC852422757900625011 /* heapSort.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = heapSort.cpp; sourceTree = "<group>"; };
 		2257EC862422757900625011 /* heapSort.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = heapSort.hpp; sourceTree = "<group>"; };
 		2257EC8C24227E2900625011 /* AdjacencyList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AdjacencyList.hpp; sourceTree = "<group>"; };
+		2257EC8F242280A400625011 /* SimpleList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SimpleList.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +88,7 @@
 		2257EC6A242230EC00625011 /* structures */ = {
 			isa = PBXGroup;
 			children = (
+				2257EC8E2422809200625011 /* List */,
 				2257EC8A24227DFB00625011 /* AdjacencyList */,
 				2257EC6B242230F300625011 /* BinHeap */,
 			);
@@ -163,6 +165,14 @@
 				2257EC8C24227E2900625011 /* AdjacencyList.hpp */,
 			);
 			path = AdjacencyList;
+			sourceTree = "<group>";
+		};
+		2257EC8E2422809200625011 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				2257EC8F242280A400625011 /* SimpleList.hpp */,
+			);
+			path = List;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

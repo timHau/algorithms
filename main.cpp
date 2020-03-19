@@ -2,14 +2,15 @@
 #include <vector>
 #include "main.hpp"
 
-bool c(int a, int b) {
-    return a <= b;
-}
-
 int main(int argc, const char * argv[]) {
-    std::vector<int> nums = utils::random_numbers(0, 100, 20);
-    std::vector<int> res = heapSort::sort<int>(nums);
-    std::for_each(res.begin(), res.end(), [](int v) { std::cout << v << " ";});
+    SimpleList<int> L;
+    L.add_value(2);
+    L.add_value(4);
+    L.add_value(6);
+    L.insert_after(L.get_head(), 99);
+    L.pop();
+    L.print();
+    
     
     return 0;
 }
