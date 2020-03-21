@@ -6,8 +6,9 @@
 
 namespace radix {
     // works only with integers
-    std::vector<int> sort(std::vector<int> &nums);
-    int decToBase(int number, int base);
+    void sort(std::vector<int> &nums);
+    std::vector<int> decToBase(int number, int base);
+    int baseToInt(std::vector<int> &numInBase, int base);
 }
 
 #endif /* radixSort_hpp */

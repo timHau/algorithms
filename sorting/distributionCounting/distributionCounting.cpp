@@ -1,6 +1,5 @@
 #include "distributionCounting.hpp"
 #include <vector>
-
 #include <iostream>
 
 namespace distCount {
