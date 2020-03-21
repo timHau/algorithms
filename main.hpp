@@ -5,6 +5,7 @@
 #include "BinHeap.hpp"
 #include "SimpleList.hpp"
 #include "Stack.hpp"
+#include "AdjacencyList.hpp"
 
 // sorting algorithms
 #include "bubbleSort.hpp"

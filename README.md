@@ -11,6 +11,7 @@ to learn c++ / algorithms with this project.
 - binary Heap
 - simply linked List
 - Stack
+- Adjacency list
 
 ### sorting
 - Bubblesort

@@ -16,16 +16,6 @@ public:
         head = NULL;
     }
     
-    ~SimpleList() {
-        Node *current = head;
-        
-        while(current) {
-            Node *toDelete = current;
-            current = current->next;
-            delete toDelete;
-        }
-    }
-    
     void insert_after(Node *prev_node, T value) {
         Node *n = new Node();
         n->label = value;
