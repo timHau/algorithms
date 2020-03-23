@@ -57,6 +57,8 @@
 		2257ECA42423C16F00625011 /* radixSort.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = radixSort.hpp; sourceTree = "<group>"; };
 		2257ECA72423CD0100625011 /* distributionCounting.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = distributionCounting.cpp; sourceTree = "<group>"; };
 		2257ECA82423CD0100625011 /* distributionCounting.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = distributionCounting.hpp; sourceTree = "<group>"; };
+		2257ECAE2428AB5100625011 /* BinSearch.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BinSearch.hpp; sourceTree = "<group>"; };
+		2257ECB22428B3C200625011 /* BinTree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BinTree.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 		2257EC4F2422232A00625011 = {
 			isa = PBXGroup;
 			children = (
+				2257ECAA2428AB0C00625011 /* searching */,
 				2257EC992423B3F100625011 /* selection */,
 				2257EC6C2422313A00625011 /* shared */,
 				2257EC7A242269A800625011 /* main.hpp */,
@@ -102,6 +105,7 @@
 		2257EC6A242230EC00625011 /* structures */ = {
 			isa = PBXGroup;
 			children = (
+				2257ECB02428B3B100625011 /* BinTree */,
 				2257EC9E2423BBC700625011 /* Stack */,
 				2257EC8E2422809200625011 /* List */,
 				2257EC8A24227DFB00625011 /* AdjacencyList */,
@@ -243,6 +247,30 @@
 				2257ECA82423CD0100625011 /* distributionCounting.hpp */,
 			);
 			path = distributionCounting;
+			sourceTree = "<group>";
+		};
+		2257ECAA2428AB0C00625011 /* searching */ = {
+			isa = PBXGroup;
+			children = (
+				2257ECAB2428AB1A00625011 /* BinSearch */,
+			);
+			path = searching;
+			sourceTree = "<group>";
+		};
+		2257ECAB2428AB1A00625011 /* BinSearch */ = {
+			isa = PBXGroup;
+			children = (
+				2257ECAE2428AB5100625011 /* BinSearch.hpp */,
+			);
+			path = BinSearch;
+			sourceTree = "<group>";
+		};
+		2257ECB02428B3B100625011 /* BinTree */ = {
+			isa = PBXGroup;
+			children = (
+				2257ECB22428B3C200625011 /* BinTree.hpp */,
+			);
+			path = BinTree;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
