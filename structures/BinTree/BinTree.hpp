@@ -79,6 +79,20 @@ public:
         if (node->right) pre_order(node->right, f);
     }
     
+    void in_order(Node *node, std::function<void(T)> f)
+    {
+        if (node->left) in_order(node->left, f);
+        f(node->key);
+        if (node->right) in_order(node->right, f);
+    }
+    
+    void post_order(Node *node, std::function<void(T)> f)
+    {
+        if (node->left) post_order(node->left, f);
+        if (node->right) post_order(node->right, f);
+        f(node->key);
+    }
+    
     Node *get_root() {
         return root;
     }
