@@ -12,6 +12,7 @@ to learn c++ / algorithms with this project.
 - simply linked List
 - Stack
 - Adjacency list
+- binary Tree
 
 ### sorting
 - Bubblesort

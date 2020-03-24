@@ -48,7 +48,7 @@ public:
         bool found = false;
         while (!found) {
             Node *compare = *comparePtr;
-                
+            
             if (n->key <= compare->key) {
                 // search the left subtree
                 if (!compare->left) {
@@ -70,6 +70,104 @@ public:
                 }
             }
         }
+    }
+    
+    Node *find(T key) {
+        Node *compare = root;
+        bool found = false;
+        while (!found) {
+            if (key < compare->key) {
+                if (!compare->left) throw "not found";
+                compare = compare->left;
+            }
+            if (key > compare->key) {
+                if (!compare->right) throw "not found";
+                compare = compare->right;
+            }
+            if (key == compare->key) {
+                found = true;
+            }
+        }
+        return compare;
+    }
+    
+    Node *find_parent(T key) {
+        Node *parent = NULL;
+        Node *compare = root;
+        bool found = false;
+        while (!found) {
+            if (key < compare->key) {
+                if (!compare->left) throw "not found";
+                parent = compare;
+                compare = compare->left;
+            }
+            if (key > compare->key) {
+                if (!compare->right) throw "not found";
+                parent = compare;
+                compare = compare->right;
+            }
+            if (key == compare->key) {
+                found = true;
+            }
+        }
+        return parent;
+    }
+    
+    void remove(T key) {
+        Node *toDelete = find(key);
+        Node *n = find_parent(key);
+        
+        int childs = get_nodetype(toDelete);
+        // handle leaves
+        if (childs == 0) {
+            if (toDelete == n->left) {
+                n->left = nullptr;
+            } else {
+                n->right = nullptr;
+            }
+        }
+        if (childs == 1) {
+            if (toDelete == n->left) {
+                // remove left child
+                if (toDelete->right) {
+                    // that has itself a right child
+                    n->left = toDelete->right;
+                } else {
+                    n->left = toDelete->left;
+                }
+            } else {
+                if (toDelete->right) {
+                    n->right = toDelete->right;
+                } else {
+                    n->right = toDelete->left;
+                }
+            }
+        }
+        if (childs == 2) {
+            // naive implementation
+            Node *leftSub = toDelete->left;
+            Node *rightSub = toDelete->right;
+            
+            if (toDelete == n->left) {
+                Node *leftRightLeave = toDelete->left;
+                while (get_nodetype(leftRightLeave) != 0) {
+                    leftRightLeave = leftRightLeave->left;
+                }
+                // put left subtree in position of toDelete
+                n->left = leftSub;
+                // put right subtree as a child of right most leave in left subtree
+                leftRightLeave->right = rightSub;
+            } else {
+                Node *rightLeftLeave = toDelete->right;
+                while (get_nodetype(rightLeftLeave) != 0) {
+                    rightLeftLeave = rightLeftLeave->right;
+                }
+                n->right = rightSub;
+                rightLeftLeave->left = leftSub;
+            }
+        }
+        
+        delete toDelete;
     }
     
     void pre_order(Node *node, std::function<void(T)> f)
@@ -95,6 +193,14 @@ public:
     
     Node *get_root() {
         return root;
+    }
+    
+    int get_nodetype(Node* n) {
+        if (!n->left && !n->right) return 0;
+        if ((n->left && !n->right) || (!n->left && n->right)) {
+            return 1;
+        }
+        return 2;
     }
     
     
