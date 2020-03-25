@@ -1,6 +1,7 @@
 #ifndef SimpleList_hpp
 #define SimpleList_hpp
 
+#include <iostream>
 
 template<typename T>
 class SimpleList
@@ -43,14 +44,29 @@ public:
         return head->label;
     }
     
+    int length() {
+        int res = 0;
+        
+        Node *current = head;
+        while (current) {
+            res++;
+            current = current->next;
+        }
+        
+        return res;
+    }
+    
     Node *get_head() {
         return head;
     }
     
+    bool empty() {
+        return head == NULL;
+    }
+    
     void print() {
         Node *current = head;
-        
-        while(current) {
+        while (current) {
             std::cout << current->label << " ";
             current = current->next;
         }

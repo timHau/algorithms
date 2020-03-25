@@ -13,6 +13,7 @@ to learn c++ / algorithms with this project.
 - Stack
 - Adjacency list
 - binary Tree
+- Queue
 
 ### sorting
 - Bubblesort
@@ -26,6 +27,8 @@ to learn c++ / algorithms with this project.
 
 ### selection
 - Quickselect
+
+### graphs
 
 __Note__: this repo was created soley for learning / implementing what i
 learned. Send pull requests if you find things that can be improved

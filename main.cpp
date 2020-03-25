@@ -13,15 +13,13 @@ int main(int argc, const char * argv[]) {
 //    for(int v : nums)
 //        std::cout << v << " ";
 //    std::cout << "" << std::endl;
-    
-    BinTree<int> B(nums);
-    B.pre_order(B.get_root(), [](int n) { std::cout << n << " "; });
-    std::cout << "" << std::endl;
-    
-    B.remove(6);
-    
-    B.pre_order(B.get_root(), [](int n) { std::cout << n << " "; });
-    std::cout << "" << std::endl;
+
+    Queue<int> q;
+    q.push(2);
+    q.push(3);
+    q.print();
+    std::cout << q.pop() << std::endl;
+    q.print();
     
     return 0;
 }

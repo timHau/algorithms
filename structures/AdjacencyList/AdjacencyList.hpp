@@ -1,6 +1,5 @@
 #ifndef AdjacencyList_hpp
 #define AdjacencyList_hpp
-
 #include <stdio.h>
 #include <vector>
 #include "SimpleList.hpp"
@@ -20,6 +19,13 @@ public:
             int to = edge[1];
             data[from].add_value(to);
         }
+    }
+    
+    int length() {
+        int res = 0;
+        for (SimpleList<int> l : data)
+            res += l.length();
+        return res;
     }
     
     

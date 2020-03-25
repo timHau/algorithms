@@ -19,6 +19,10 @@ public:
         data.print();
     }
     
+    bool empty() {
+        return data.empty();
+    }
+    
     T peek() {
         return data.peek();
     }

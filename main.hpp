@@ -7,6 +7,7 @@
 #include "Stack.hpp"
 #include "AdjacencyList.hpp"
 #include "BinTree.hpp"
+#include "Queue.hpp"
 
 // sorting algorithms
 #include "bubbleSort.hpp"
@@ -18,8 +19,8 @@
 #include "distributionCounting.hpp"
 #include "radixSort.hpp"
 
-// searching algorithms
-#include "BinSearch.hpp"
+// graph algorithms
+#include "breadthFirstSearch.hpp"
 
 
 #endif /* main_h */
