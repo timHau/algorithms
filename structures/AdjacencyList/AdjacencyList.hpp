@@ -21,10 +21,10 @@ public:
         }
     }
     
-    int length() {
+    int size() {
         int res = 0;
         for (SimpleList<int> l : data)
-            res += l.length();
+            res += l.size();
         return res;
     }
     

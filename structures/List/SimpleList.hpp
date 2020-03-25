@@ -44,7 +44,7 @@ public:
         return head->label;
     }
     
-    int length() {
+    int size() {
         int res = 0;
         
         Node *current = head;
